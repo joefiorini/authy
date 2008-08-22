@@ -10,11 +10,11 @@ h3. for_admin_only
 
 This method takes a block of code and executes it only for users with admin priveleges. Admin priveleges are determined by a method called admin? on your user model.  For example:
 
-class User < ActiveRecord::Base
-  def admin?
-    attributes[:admin]
-  end
-end
+	class User < ActiveRecord::Base
+	  def admin?
+	    attributes[:admin]
+	  end
+	end
 
 An example of using this method:
 
